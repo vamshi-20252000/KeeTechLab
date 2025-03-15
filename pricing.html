@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeeTechLab - Empowering Your Business</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .pricing {
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            gap: 20px;
+            padding-top: 100px;
+            flex-wrap: nowrap; 
+            overflow-x: auto; 
+        }
+        .details{
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+            width: 1200px ;
+            height: auto; 
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            transition: transform 0.3s ease;
+            
+        }
+
+
+        .subscription-container {
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: stretch; 
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: nowrap; 
+            overflow-x: auto; 
+        }
+
+       
+        .plan {
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            height: 300px; 
+            background-color : #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            transition: transform 0.3s ease;
+        }
+
+        
+        .plan:hover {
+            transform: scale(1.05);
+        }
+
+        
+        .plan h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        
+        .plan p {
+            font-size: 16px;
+            margin: 5px 0;
+            flex-grow: 1; 
+        }
+
+        
+        .plan button {
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            background-color: #067dfd;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            align-self: center; 
+        }
+
+        .plan button:hover {
+            background-color: #010a14;
+        }
+
+        .termsandconditions {
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            gap: 10px;
+            padding: 20px;
+            margin-top: 60px;
+            flex-wrap: nowrap; 
+            overflow-x: auto; 
+        }
+
+        .points h3 {
+           margin-bottom: 20px; 
+        }
+
+        .points h3 p {
+        margin-bottom: 0;
+        }
+
+
+
+        .points {
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+            width: 1200px ;
+            height: auto; 
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            transition: transform 0.3s ease;
+            
+        }
+        .points h1{
+            text-align: center;
+
+        }
+
+        .silver{
+            background-color:  #C0C0C0;
+        }
+
+        .gold{
+            background-color: #FFD700;
+        }
+
+       
+        @media (max-width: 768px) {
+    
+    .pricing {
+        padding-top: 290px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscription-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .termsandconditions  {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .details, .points {
+        width: 90%;
+        padding: 15px;
+    }
+
+    
+    .plan {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    
+    .plan h3 {
+        font-size: 20px;
+    }
+
+    .plan p {
+        font-size: 14px;
+    }
+
+    .plan button {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="company-info">
+                <h1>KeeTechLabs</h1>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="./services.html">Services</a>
+                <a href="./career.html">Career</a>
+                <a href="./pricing.html">Pricing</a>
+                <a href="./casestudy.html">Case Study</a>
+            </div>
+        </nav>
+    
+        <script>
+            function toggleMenu() {
+                document.querySelector(".nav-links").classList.toggle("active");
+            }
+        </script>
+    </header>
+    <div class="pricing">
+        <div class="details">
+            <h3><p>We believe in fostering enduring partnerships with our clients by providing tailor-made solutions that meet your unique needs. We put your
+                users at the forefront of everything we do with our human-centric, innovative solutions. With us as a global technology partner by your side,
+                you can drive your business growth on autopilot mode</p></h3>
+        </div>
+    </div>
+
+    <div class="subscription-container">
+            <div class="plan">
+                <h3>Silver Plan - ₹1,999/month</h3>
+                <p>Simple websites or apps</p>
+                <p>Limited features</p>
+                <p>Basic support</p>
+                <button onclick="window.location.href='#'">Select Plan</button>
+            </div>
+       
+
+        <div class="plan">
+            <h3>Gold Plan - ₹3,999/month</h3>
+            <p>Advanced apps/websites</p>
+            <p>Additional features and integrations</p>
+            <p>Priority support</p>
+            <button onclick="window.location.href='#'">Select Plan</button>
+        </div>
+
+        <div class="plan">
+            <h3>Plantinum Plan - ₹7,999/month</h3>
+            <p>Dedicated team</p>
+            <p>Digital Marketing & SEO Support</p>
+            <p>Priority support</p>
+            <button onclick="window.location.href='#'">Select Plan</button>
+        </div>
+
+        <div class="plan">
+            <h3>Custom Pricing</h3>
+            <p>Fully customizable solutions</p>
+            <p>Enterprise-grade support</p>
+            <p>Dedicated maintenance</p>
+            <button onclick="window.location.href='#'">More Info</button>
+        </div>
+    </div>
+
+
+    <div class="termsandconditions">
+        <div class="points">
+            <h1>TERM'S & CONDITIONS</h1>
+    
+            <h2>1. Scope of Services</h2>
+            <p>KeetechLabs provides IT development and support services, including but not limited to website development, mobile application development, hosting, and ongoing maintenance.</p>
+            <ul>
+                <li>Basic Plan – ₹1,999/month: Portfolio website and app.</li>
+                <li>Medium Plan – ₹3,999/month: Small-scale e-commerce or office website and app.</li>
+                <li>Large Plan – ₹7,999/month: Larger-scale website and app.</li>
+                <li>Custom Plan – Priced based on specific requirements outside the above categories.</li>
+            </ul>
+            <p>The services rendered under this Agreement include IT support, maintenance, and bug fixes but do not cover third-party costs (e.g., domain, hosting, SMS gateways, Firebase storage).</p>
+    
+            <h2>2. Payment Terms & Initial Deposit</h2>
+            <ul>
+                <li>The Client is required to pay a six-month subscription fee upfront as a security deposit before the commencement of services.</li>
+                <li>Monthly subscription payments commence from the first month, in addition to the security deposit.</li>
+                <li>Payment Due Date: The monthly subscription fee must be paid by the 5th of each month.</li>
+                <li>Grace Period: A 10-business-day grace period is provided, making the final deadline the 15th of each month.</li>
+            </ul>
+    
+            <h2>3. Consequences of Non-Payment</h2>
+            <ul>
+                <li><strong>Service Suspension:</strong> If payment is not received by the 15th of the month, KeetechLabs reserves the right to immediately suspend all services.</li>
+                <li><strong>Termination:</strong> If non-payment persists for 30 days, KeetechLabs will terminate all services, including domain hosting, web/app access, and IT infrastructure.</li>
+                <li><strong>Data Retention & Storage Fees:</strong> Client data will be stored for 60 days at no charge; afterward, a ₹590/month storage fee applies.</li>
+                <li><strong>Legal Recourse:</strong> KeetechLabs reserves the right to initiate legal action for outstanding dues. The Client is liable for legal costs.</li>
+            </ul>
+    
+            <h2>4. Domain, Hosting & Intellectual Property Rights</h2>
+            <ul>
+                <li>All domains, hosting, and app store listings (Google Play/App Store) shall be registered under KeetechLabs’ name for subscription clients.</li>
+                <li>KeetechLabs retains full control over all domain, hosting, and app deployment rights.</li>
+                <li>Upon cancellation, the Client must purchase domain and hosting rights separately after clearing outstanding dues.</li>
+            </ul>
+    
+            <h2>5. Third-Party Charges & Billing</h2>
+            <p>The subscription fee covers IT development and support but excludes third-party costs such as:</p>
+            <ul>
+                <li>Domain registration and renewal fees</li>
+                <li>Office email services</li>
+                <li>SMS gateway and Firebase storage fees</li>
+                <li>Third-party APIs, cloud hosting, or external integrations</li>
+            </ul>
+            <p>Invoices for these charges will be provided by the 10th of each month and must be settled by the 15th.</p>
+    
+            <h2>6. IT Support, Maintenance & Additional Modifications</h2>
+            <ul>
+                <li>KeetechLabs provides continuous IT support, maintenance, and bug fixes as part of the subscription.</li>
+                <li>Feature updates will be provided only if necessary for efficiency or security enhancements.</li>
+                <li>Custom modifications or new feature additions require separate one-time payments.</li>
+            </ul>
+    
+            <h2>7. Subscription Cancellation & Refund Policy</h2>
+            <ul>
+                <li>Clients must provide a 30-day written notice for cancellation.</li>
+                <li>The security deposit will be refunded within 45 days, subject to the clearance of all outstanding dues.</li>
+                <li>Refunds shall be issued via NEFT to the Client’s registered bank account.</li>
+            </ul>
+    
+            <h2>8. Data Ownership, Handover & Liability</h2>
+            <ul>
+                <li>Client data remains under KeetechLabs' control during the subscription period.</li>
+                <li>Data will only be released upon full payment of outstanding dues.</li>
+                <li>After 60 days post-cancellation, a ₹590/month storage fee applies.</li>
+                <li>Clients must sign an agreement before data is handed over.</li>
+            </ul>
+    
+            <h2>9. Legal Compliance & Dispute Resolution</h2>
+            <ul>
+                <li>This Agreement is legally binding under Indian Contract Law.</li>
+                <li>Any dispute shall be resolved under the exclusive jurisdiction of Indian courts.</li>
+                <li>The Client indemnifies KeetechLabs against any claims, liabilities, or disputes.</li>
+            </ul>
+    
+            <h2>10. Miscellaneous</h2>
+            <ul>
+                <li>KeetechLabs reserves the right to amend this Agreement with prior notice.</li>
+                <li>No refunds or service continuations shall be granted if the Client violates the Agreement.</li>
+                <li>Chargebacks, fraudulent claims, or legal violations will be treated as contractual fraud.</li>
+            </ul>
+    
+            <p><strong>By subscribing to KeetechLabs' services, the Client agrees to all terms and conditions outlined above.</strong></p>
+        </div>
+    </div>
+
+
+    <div class="connectwithus">
+        <h1>Connect With Us</h1>
+        <p>If you're interested in learning more or have questions, feel free to connect with us on WhatsApp!</p>
+        <a class="connect-button" href="https://api.whatsapp.com/send/?phone=7207757572">Connect With Us</a>
+        
+    </div>
+    <footer>
+        <p>&copy; 2025 KeeTechLabs. All rights reserved.</p>
+    </footer> 
+
+    
+
+
+
+    
+
+</body>
+</html>
+
+   
+
+     

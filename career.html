@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeeTechLab - Empowering Your Business</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .career {
+            margin-top: 100px;
+            text-align: center;
+            padding: 40px;
+            background-color: black;
+            color:white; 
+            border-radius: 10px;
+            font-weight: bold;
+            border: 2px solid #333;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .career1, .career2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            background-color: black;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            color: white;
+            border: 2px solid #333;
+        }
+        .career1-text, .career2-text {
+            float: left;
+            max-width: 50%;
+        }
+
+        .career1-image img, .career2-image img {
+            float: right;
+            width: 100%;
+            border-radius: 10px;
+
+        }
+
+        .career3 {
+            text-align: center;
+            padding: 40px;
+            background-color: black;
+            color:white; 
+            border-radius: 10px;
+            font-weight: bold;
+            border: 2px solid #333;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+
+
+
+
+        @media (max-width:768px) {
+            .career {
+                width: 80%;
+                padding-top: 200px;
+            }
+
+            .career1, .career2 {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px;
+            }
+
+            .career1-image img, .career2-image img {
+                width: 100%;
+                height: auto;
+            }
+            .career1-text, .career2-text {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .career {
+                width: 80%;
+                padding-top: 200px;
+            }
+
+        }
+
+
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="company-info">
+                <h1>KeeTechLabs</h1>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="./services.html">Services</a>
+                <a href="./career.html">Career</a>
+                <a href="./pricing.html">Pricing</a>
+                <a href="./casestudy.html">Case Study</a>
+            </div>
+        </nav>
+    
+        <script>
+            function toggleMenu() {
+                document.querySelector(".nav-links").classList.toggle("active");
+            }
+        </script>
+    </header>
+
+
+    <div class="career">
+        <p>At KeetechLabs, we believe that our success is driven by the talent and passion of our team. We offer exciting career opportunities in mobile application development and full-stack development, empowering professionals to grow and innovate in a dynamic work environment. </p>
+    </div>
+
+
+    <section class="career1">
+        <div class="career1-text">
+            <h1> Mobile Application Development </h1>
+            <ul>
+                <li>: Mobile applications are at the forefront of digital transformation, enabling businesses to connect with their customers seamlessly. </li>
+                <br />
+                <li>At KeetechLabs, our mobile app developers work on cutting-edge technologies like Android (Kotlin, Java), iOS (Swift), and Flutter to create high-performing, user-friendly applications. </li>
+                <br />
+                <li>Joining our team means working on diverse projects, solving real-world challenges, and continuously learning to stay ahead in the fast-evolving tech landscape. </li>
+            
+            </ul>
+        </div>
+        <div class="career1-image">
+            <img src="./assets/career1.png" alt="About Us">
+        </div>
+    </section>
+
+
+    <section class="career2">
+        <div class="career2-text">
+            <h1> Full-Stack Development </h1>
+            <ul>
+                <li> Full-stack developers play a crucial role in building scalable and efficient digital solutions. </li>
+                <br />
+                <li> Our full-stack development team specializes in front-end and back-end technologies, including React.js, Node.js, MongoDB, and more. </li>
+                <br />
+                <li> As a full-stack developer at KeetechLabs, you'll have the opportunity to develop complete software solutions, work on database management, API integrations, and contribute to creating seamless web applications. </li>
+            </ul>
+        </div>
+        <div class="career2-image">
+            <img src="./assets/career2.png" alt="About Us">
+        </div>
+    </section>
+
+
+    <div class="career3">
+        <p> We foster a culture of collaboration, innovation, and continuous learning, ensuring that our employees have the resources and support to excel in their careers. Whether you're an experienced developer or a passionate newcomer, KeetechLabs offers a thriving work environment where creativity and expertise are valued. Join us and be a part of our mission to build the future of technology. </p>
+    </div>
+
+
+
+    <div class="connectwithus">
+        <h1>Connect With Us</h1>
+        <p>If you're interested in learning more or have questions, feel free to connect with us on WhatsApp!</p>
+        <a class="connect-button" href="https://api.whatsapp.com/send/?phone=7207757572">Connect With Us</a>
+        
+    </div>
+    <footer>
+        <p>&copy; 2025 KeeTechLabs. All rights reserved.</p>
+    </footer> 
+
+
+
+    
+    </body>
+</html>

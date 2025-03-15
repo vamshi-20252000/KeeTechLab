@@ -1,0 +1,432 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:black; 
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+    color: #fff;
+}
+
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .company-info {
+    display: flex;
+    align-items: center;
+}
+
+header .company-info img {
+    height: 50px; 
+    margin-right: 10px;
+}
+
+header .company-info h1 {
+    font-size: 24px;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px 20px ;
+    background-color: #000; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: rgb(56, 54, 54);
+    border-radius: 100px;
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+header .nav-links a:hover {
+    text-decoration: underline;
+}
+
+center {
+    text-align: center;
+    margin: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#home{
+    text-align: center;
+    padding: 50px;
+
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+footer {
+    background-color: rgb(216, 196, 182);
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+.about-us, .our-guiding-principle, .success-contribution {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: black;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: white;
+    border: 2px solid #333;
+}
+
+.about-text, .principle-text, .success-text {
+    float: left;
+    max-width: 50%;
+}
+
+.about-image img, .principle-image img, .success-image img {
+    float: right;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.countries-we-serve {
+    border: 2px solid #333;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px; 
+}
+
+
+.countries-text {
+    flex: 1; 
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-weight: bold;
+}
+
+.countries-image {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.countries-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.employees {
+    text-align: center;
+    padding: 50px;
+}
+
+.employees-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.employee-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.employee-card:hover {
+    transform: translateY(-5px);
+}
+
+.employee-image img {
+    width: 100% ;
+    height: 100%;
+    border-radius: 10px;
+}
+
+figcaption {
+    margin-top: 15px;
+}
+
+figcaption h3 {
+    font-size: 1.5rem;
+    color: #030303;
+    margin-bottom: 5px;
+}
+
+figcaption h4 {
+    font-size: 1.2rem;
+    color: #080808;
+    font-weight: bold;
+}
+
+.connectwithus { 
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 15px; 
+    margin: 15px 0; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    flex-direction: column;    
+    
+}
+
+
+.connect-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.connect-button:hover {
+    background: #0056b3;
+    color: white;
+}
+
+
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        text-align: right;
+        padding: 10px;
+        border-radius: 5px;
+        animation: slideDown 0.3s ease-in-out;
+    }
+
+    .nav-links a {
+        display: block;
+        padding-right: 50px;
+        font-size: 18px;
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    .hamburger {
+        display: flex;
+        padding-right: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+   
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+  
+
+    .company-slogan {
+        padding-top: 200px;
+    }
+
+    
+    .about-us, .our-guiding-principle, .success-contribution {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .about-text, .principle-text, .success-text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-image img, .principle-image img, .success-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    
+    .countries-we-serve {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .countries-text, .countries-image {
+        width: 100%;
+        padding: 20px;
+    }
+
+   
+    .employee-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .employee-card {
+        padding: 15px;
+    }
+
+    
+    footer {
+        padding: 15px;
+    }
+}
+
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

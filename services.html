@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeeTechLab - Empowering Your Business</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .services {
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            gap: 20px;
+            padding-top: 100px;
+            flex-wrap: nowrap; 
+            overflow-x: auto; 
+        }
+        .details{
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+            width: 1200px ;
+            height: auto; 
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            transition: transform 0.3s ease;
+            
+        }
+
+
+        .subscription-container {
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: stretch; 
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: nowrap; 
+            overflow-x: auto; 
+        }
+
+       
+        .plan {
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 350px;
+            height: 350px; 
+            background-color : #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            transition: transform 0.3s ease;
+        }
+
+        
+        .plan:hover {
+            transform: scale(1.05);
+        }
+
+        
+        .plan h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        
+        .plan p {
+            font-size: 16px;
+            margin: 5px 0;
+            flex-grow: 1; 
+        }
+
+        
+        .plan button {
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            background-color: #067dfd;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            align-self: center; 
+        }
+
+        .plan button:hover {
+            background-color: #010a14;
+        }
+
+
+
+
+
+      
+
+       
+        @media (max-width: 768px) {
+    
+    .services {
+        padding-top: 290px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscription-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .termsandconditions  {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .details, .points {
+        width: 90%;
+        padding: 15px;
+    }
+
+    
+    .plan {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    
+    .plan h3 {
+        font-size: 20px;
+    }
+
+    .plan p {
+        font-size: 14px;
+    }
+
+    .plan button {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="company-info">
+                <h1>KeeTechLabs</h1>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="./services.html">Services</a>
+                <a href="./career.html">Career</a>
+                <a href="./pricing.html">Pricing</a>
+                <a href="./casestudy.html">Case Study</a>
+            </div>
+        </nav>
+    
+        <script>
+            function toggleMenu() {
+                document.querySelector(".nav-links").classList.toggle("active");
+            }
+        </script>
+    </header>
+    <div class="services">
+        <div class="details">
+            <h3><p>At KeeTechLab, we specialize in delivering innovative technology solutions to help businesses thrive in the digital age. From web and mobile development to custom enterprise solutions, our services are tailored to meet your specific needs.</p></h3>
+        </div>
+    </div>
+
+    <div class="subscription-container">
+            <div class="plan">
+                <h3>Android</h3>
+                <p>Simple websites or apps</p>
+                <p>Limited features</p>
+                <p>Basic support</p>
+                <button onclick="window.location.href='#'">Select Plan</button>
+            </div>
+       
+
+        <div class="plan">
+            <h3>iOS</h3>
+            <p>Advanced apps/websites</p>
+            <p>Additional features and integrations</p>
+            <p>Priority support</p>
+            <button onclick="window.location.href='#'">Select Plan</button>
+        </div>
+
+        <div class="plan">
+            <h3>Cross-Platform</h3>
+            <p>Dedicated team</p>
+            <p>Digital Marketing & SEO Support</p>
+            <p>Priority support</p>
+            <button onclick="window.location.href='#'">Select Plan</button>
+        </div>
+    </div>
+
+
+    <div class="subscription-container">
+        <div class="plan">
+            <h3>Web Development</h3>
+            <p>Simple websites or apps</p>
+            <p>Limited features</p>
+            <p>Basic support</p>
+            <button onclick="window.location.href='#'">Select Plan</button>
+        </div>
+   
+
+    <div class="plan">
+        <h3>Software Consulting</h3>
+        <p>Advanced apps/websites</p>
+        <p>Additional features and integrations</p>
+        <p>Priority support</p>
+        <button onclick="window.location.href='#'">Select Plan</button>
+    </div>
+
+    <div class="plan">
+        <h3>Blockchain</h3>
+        <p>Dedicated team</p>
+        <p>Digital Marketing & SEO Support</p>
+        <p>Priority support</p>
+        <button onclick="window.location.href='#'">Select Plan</button>
+    </div>
+</div>
+
+
+<div class="subscription-container">
+    <div class="plan">
+        <h3>D-Apps</h3>
+        <p>Simple websites or apps</p>
+        <p>Limited features</p>
+        <p>Basic support</p>
+        <button onclick="window.location.href='#'">Select Plan</button>
+    </div>
+
+
+<div class="plan">
+    <h3>Mobile Game Development</h3>
+    <p>Advanced apps/websites</p>
+    <p>Additional features and integrations</p>
+    <p>Priority support</p>
+    <button onclick="window.location.href='#'">Select Plan</button>
+</div>
+
+<div class="plan">
+    <h3>CRM</h3>
+    <p>Dedicated team</p>
+    <p>Digital Marketing & SEO Support</p>
+    <p>Priority support</p>
+    <button onclick="window.location.href='#'">Select Plan</button>
+</div>
+</div>
+
+
+
+    <div class="connectwithus">
+        <h1>Connect With Us</h1>
+        <p>If you're interested in learning more or have questions, feel free to connect with us on WhatsApp!</p>
+        <a class="connect-button" href="https://api.whatsapp.com/send/?phone=7207757572">Connect With Us</a>
+        
+    </div>
+    <footer>
+        <p>&copy; 2025 KeeTechLabs. All rights reserved.</p>
+    </footer> 
+</body>
+</html>
+
+   
+
+     
